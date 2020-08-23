@@ -10,7 +10,7 @@
 
   /** Runs when the page is loaded and initializes event listeners on certain elements */
   function init() {
-    qs("top-button").addEventListener("click", topOfPage);
+    id("top-button").addEventListener("click", topOfPage);
 
   }
 
