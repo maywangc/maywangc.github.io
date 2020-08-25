@@ -15,6 +15,7 @@
     id("work-btn").addEventListener("click", workView);
     id("resume-btn").addEventListener("click", () => (window.open("files/MayWang_Resume.pdf", "_blank")));
     id("contact-btn").addEventListener("click", newContact);
+    qs("#about span").addEventListener("click", newContact);
   }
 
   function newContact() {

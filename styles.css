@@ -132,3 +132,17 @@ footer {
 .invisible {
   visibility: hidden;
 }
+
+em {
+  font-weight: bold;
+  font-style: initial;
+}
+
+#about span {
+  font-weight: bold;
+}
+
+#about span:hover {
+  color: lightslategray;
+  cursor: pointer;
+}
