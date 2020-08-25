@@ -16,6 +16,23 @@
     id("resume-btn").addEventListener("click", () => (window.open("files/MayWang_Resume.pdf", "_blank")));
     id("contact-btn").addEventListener("click", newContact);
     qs("#about span").addEventListener("click", newContact);
+    qs("#contact form").addEventListener("submit", submitForm);
+    qs("form").addEventListener("input", enableSubmit);
+  }
+
+  function enableSubmit() {
+    let name = id("name").value.trim();
+    let email = id("email").value.trim();
+    let message = id("message").value.trim();
+    if (name.length !== 0 || email.length !== 0 || message.length !== 0) {
+      qs("#contact button").disabled = false;
+    } else {
+      qs("#contact button").disabled = true;
+    }
+  }
+
+  function submitForm() {
+
   }
 
   function newContact() {

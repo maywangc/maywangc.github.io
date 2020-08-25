@@ -69,6 +69,7 @@ h1 {
   background-color: rgb(211, 220, 250);
   padding: 20px;
   margin-bottom: 50px;
+  border-radius: 20px;
 }
 
 #about img {
@@ -76,7 +77,7 @@ h1 {
   width: 45vh;
   height: 45vh;
   margin: 40px;
-  margin-left: 0px;
+  margin-left: 25px;
   margin-top: 0px;
   float: left;
 }
@@ -145,4 +146,36 @@ em {
 #about span:hover {
   color: lightslategray;
   cursor: pointer;
+}
+
+#contact h2 {
+  margin-top: 100px;
+}
+
+#contact label {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  border-radius: 20px;
+  background-color: rgb(211, 220, 250);
+  padding: 25px;
+  padding-top: 5px;
+}
+
+#contact form input {
+  height: 30px;
+}
+
+#contact #message {
+  height: 150px;
+}
+
+#contact button {
+  padding: 20px;
+  padding-top: 30px;
 }
