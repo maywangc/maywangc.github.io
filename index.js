@@ -21,16 +21,19 @@
     id("home").classList.add("hidden");
     id("work").classList.add("hidden");
     id("contact").classList.remove("hidden");
+    id("top-btn").classList.add("invisible");
   }
 
   function workView() {
     id("home").classList.add("hidden");
     id("work").classList.remove("hidden");
+    id("contact").classList.add("hidden");
   }
 
   function homeView() {
     id("home").classList.remove("hidden");
     id("work").classList.add("hidden");
+    id("contact").classList.add("hidden");
   }
 
   /** Scrolls to the top of the page */

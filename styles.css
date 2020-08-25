@@ -67,7 +67,8 @@ h1 {
   text-align: center;
   width: 100%;
   background-color: rgb(211, 220, 250);
-  padding: 30px;
+  padding: 20px;
+  margin-bottom: 50px;
 }
 
 #about img {
@@ -112,7 +113,8 @@ button:hover {
 }
 
 #top-btn {
-  float: right;
+  position: absolute;
+  right: 125px;
 }
 
 .hidden {
@@ -122,5 +124,11 @@ button:hover {
 footer {
   font-size: 11px;
   text-align: center;
+  position: absolute;
+  right: 40%;
   padding: 20px;
+}
+
+.invisible {
+  visibility: hidden;
 }
