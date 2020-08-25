@@ -13,7 +13,9 @@
     id("top-btn").addEventListener("click", topOfPage);
     id("home-btn").addEventListener("click", homeView);
     id("work-btn").addEventListener("click", workView);
-    id("resume-btn").addEventListener("click", () => (window.open("files/MayWang_Resume.pdf", "_blank")));
+    id("resume-btn").addEventListener("click", () => {
+      window.open("files/MayWang_Resume.pdf", "_blank");
+    });
     id("contact-btn").addEventListener("click", newContact);
     qs("#about span").addEventListener("click", newContact);
     qs("#contact form").addEventListener("submit", submitForm);
@@ -31,8 +33,9 @@
     }
   }
 
-  function submitForm() {
-
+  function submitForm(e) {
+    e.preventDefault();
+    // do stuff here
   }
 
   function newContact() {
