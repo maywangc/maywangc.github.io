@@ -3,15 +3,14 @@
   May Wang
   July 14, 2020
 
-  This is a website containing information about myself. On this page you can find a brief
-  description of myself and my work experience.
+  This is my personal website. On this page you can find my brief introduction, my work experience,
+  my resume, and a way to contact me directly.
 -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>May Wang</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-all.css">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
   </head>
@@ -20,48 +19,61 @@
     <header>
       <nav>
         <div>
-          <a href="index.html">Home</a>
-          <a href="work-exp.html">Work Experience</a>
+          <button id="home-btn">Home</button>
+          <button id="work-btn">Work Experience</button>
+          <button id="resume-btn">Resume</button>
+          <button id="contact-btn">Contact</button>
         </div>
       </nav>
-
-      <h1>May Wang</h1>
-      <p id="bio">
-        Computer Science student at the University of Washington in Seattle.
-        <br>
-        Detailed, driven, and passionate about technology.
-      </p>
     </header>
 
-    <hr>
-
     <main>
-      <section>
-        <h2>About Me</h2>
-        <img src="img/profile.jpg" alt="Profile Picture" id="profile">
-        <p>
-          Hi, I'm May! I'm a Sophomore studying Computer Science at UW. In an attempt
-          to discover my interests and career path, I'm exploring many opportunities at UW by
-          taking a variety of classes. I particularly enjoy CSE 154, a web programming course.
-        </p>
-        <p>
-          Aside from academics, I'm currently involved in many Registered Student Organizations
-          (RSOs), including SEED, Dawg Daze, and Acts 2 Fellowship (A2F). I'm also very excited to
-          join the 2020-21 Resident Adviser (RA) team!
-        </p>
-        <p>
-          Check out my other pages for more information on my involvement and activities.
-        </p>
+      <section id="home">
+        <section id="intro">
+          <h1>May Wang</h1>
+          <div>
+            <p>
+              Computer science student at the University of Washington, Seattle.<br>Detailed, driven,
+              and passionate about technology.
+            </p>
+          </div>
+        </section>
+        <section id="about">
+          <h2>About Me</h2>
+          <img src="img/profile.jpg" alt="Profile Picture">
+          <p>
+            Hi, I'm May! I'm a second year student studying computer science at UW. I'm currently
+            looking for Summer 2021 SWE internships.
+          </p>
+          <p>
+            I'm involved in many Registered Student Organizations (RSOs) at UW, including SEED, and
+            Acts 2 Fellowship (A2F). I'm also very excited to join the 2020-21 Residential Life
+            team as a Resident Adviser (RA)!
+          </p>
+          <p>
+            Check out my other pages for more information on my involvement and activities. Also
+            feel free to contact me!
+          </p>
+        </section>
       </section>
 
-      <div id="top-button">
-        <button>Back to Top</button>
-      </div>
+      <!-- Work Experience to be populated using JavaScript -->
+      <section id="work-exp" class="hidden"></section>
+
+      <section id="contact" class="hidden">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+          <label for="email">Email</label>
+          <input type="text" id="yip" required pattern="^[a-zA-Z\d]+@[a-zA-Z]+[.com]{1}$">
+          <button>Submit!</button>
+        </form>
+      </section>
+
+      <button id="top-btn">Back to Top</button>
     </main>
 
-    <footer>
-      Copyright 2020 May Wang. All rights reserved.
-    </footer>
-
+    <footer>&copy; Copyright 2020 May Wang. All rights reserved.</footer>
   </body>
 </html>

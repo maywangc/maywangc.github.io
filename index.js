@@ -10,8 +10,27 @@
 
   /** Runs when the page is loaded and initializes event listeners on certain elements */
   function init() {
-    id("top-button").addEventListener("click", topOfPage);
+    id("top-btn").addEventListener("click", topOfPage);
+    id("home-btn").addEventListener("click", homeView);
+    id("work-btn").addEventListener("click", workView);
+    id("resume-btn").addEventListener("click", () => (window.open("files/MayWang_Resume.pdf", "_blank")));
+    id("contact-btn").addEventListener("click", newContact);
+  }
 
+  function newContact() {
+    id("home").classList.add("hidden");
+    id("work").classList.add("hidden");
+    id("contact").classList.remove("hidden");
+  }
+
+  function workView() {
+    id("home").classList.add("hidden");
+    id("work").classList.remove("hidden");
+  }
+
+  function homeView() {
+    id("home").classList.remove("hidden");
+    id("work").classList.add("hidden");
   }
 
   /** Scrolls to the top of the page */
