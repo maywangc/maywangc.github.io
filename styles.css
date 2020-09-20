@@ -139,6 +139,10 @@ em {
   font-style: initial;
 }
 
+#resume {
+  height: 150vh;
+}
+
 #about span {
   font-weight: bold;
 }
@@ -148,7 +152,7 @@ em {
   cursor: pointer;
 }
 
-#contact h2 {
+#resume, #contact h2 {
   margin-top: 100px;
 }
 
