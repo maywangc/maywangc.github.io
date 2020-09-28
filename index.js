@@ -12,7 +12,7 @@
   function init() {
     id("top-btn").addEventListener("click", topOfPage);
     id("home-btn").addEventListener("click", homeView);
-    id("work-btn").addEventListener("click", workView);
+    id("exp-btn").addEventListener("click", expView);
     id("resume-btn").addEventListener("click", resumeView);
     id("contact-btn").addEventListener("click", newContact);
     qs("#about span").addEventListener("click", newContact);
@@ -38,7 +38,7 @@
 
   function newContact() {
     id("home").classList.add("hidden");
-    id("work").classList.add("hidden");
+    id("exp").classList.add("hidden");
     id("resume").classList.add("hidden");
     id("contact").classList.remove("hidden");
     id("top-btn").classList.add("invisible");
@@ -46,14 +46,14 @@
 
   function resumeView() {
     id("home").classList.add("hidden");
-    id("work").classList.add("hidden");
+    id("exp").classList.add("hidden");
     id("contact").classList.add("hidden");
     id("resume").classList.remove("hidden");
   }
 
-  function workView() {
+  function expView() {
     id("home").classList.add("hidden");
-    id("work").classList.remove("hidden");
+    id("exp").classList.remove("hidden");
     id("resume").classList.add("hidden");
     id("contact").classList.add("hidden");
     id("top-btn").classList.remove("invisible");
@@ -61,7 +61,7 @@
 
   function homeView() {
     id("home").classList.remove("hidden");
-    id("work").classList.add("hidden");
+    id("exp").classList.add("hidden");
     id("resume").classList.add("hidden");
     id("contact").classList.add("hidden");
     id("top-btn").classList.remove("invisible");
