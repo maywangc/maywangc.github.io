@@ -185,8 +185,8 @@ em {
   padding-top: 30px;
 }
 
-#scroll {
+#scroll-btn {
   position: absolute;
-  right: 47%;
   padding-top: 575px;
+  font-size: 20px;
 }

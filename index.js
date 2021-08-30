@@ -10,6 +10,7 @@
 
   /** Runs when the page is loaded and initializes event listeners on certain elements */
   function init() {
+    id("scroll-btn").addEventListener("click", scrollDown);
     id("top-btn").addEventListener("click", topOfPage);
     id("home-btn").addEventListener("click", homeView);
     id("exp-btn").addEventListener("click", expView);
@@ -71,6 +72,11 @@
   function topOfPage() {
     window.scrollTo(0, 0);
   }
+
+    /** Scrolls down the page */
+    function scrollDown() {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
 
   /** alias functions */
   /**
