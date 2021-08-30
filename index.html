@@ -7,85 +7,86 @@
   resume, and a way to contact me directly.
 -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>May Wang</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>May Wang</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js"></script>
+    </head>
 
-  <body>
-    <header>
-      <nav>
-        <div>
-          <button id="home-btn">Home</button>
-          <button id="exp-btn" disabled>Experience</button>
-          <button id="resume-btn">Resume</button>
-          <button id="contact-btn">Contact</button>
-        </div>
-      </nav>
-    </header>
+    <body>
+        <header>
+            <nav>
+                <div>
+                    <button id="home-btn">Home</button>
+                    <button id="exp-btn" disabled>Experience</button>
+                    <button id="resume-btn">Resume</button>
+                    <button id="contact-btn">Contact</button>
+                </div>
+            </nav>
+        </header>
 
-    <main>
-      <section id="home">
-        <section id="intro">
-          <h1>May Wang</h1>
-          <div>
-            <p>
-              Computer science student at the University of Washington, Seattle.<br>
-              Detailed, driven, and passionate about technology.
-            </p>
-          <div id="scroll">
-              Scroll down
-          </div>
-        </section>
-        <section id="about">
-          <h2>About Me</h2>
-          <img src="img/profile.jpeg" alt="Profile Picture">
-          <p>
-            Hi, I'm May! I'm a third-year student studying <em>computer science</em> at <em>UW</em>.
-          </p>
-          <p>
-            I'm interested in software engineering, and have worked on projects using languages such
-            as Java, HTML/CSS, JavaScript, Python, and C.
-          </p>
-          <p>
-            I also enjoy supporting others as a Resident Adviser at UW, as well as teaching
-            Java programming as a Head Teaching Assistant for the introductory computer science
-            series.
-          </p>
-          <p>
-            Check out my other pages to see my projects and involvement, and feel free to
-            <span>contact</span> me!
-          </p>
-        </section>
-      </section>
+        <main>
+            <section id="home">
+                <section id="intro">
+                    <h1>May Wang</h1>
+                    <div>
+                        <p>
+                          Computer science student at the University of Washington, Seattle.<br>
+                          Detailed, driven, and passionate about technology.
+                        </p>
+                    </div>
+                    <div id="scroll">
+                        Scroll down
+                    </div>
+                </section>
+                <section id="about">
+                    <h2>About Me</h2>
+                    <img src="img/profile.jpeg" alt="Profile Picture">
+                    <p>
+                        Hi, I'm May! I'm a third-year student studying <em>computer science</em> at <em>UW</em>.
+                    </p>
+                    <p>
+                        I'm interested in software engineering, and have worked on projects using languages such
+                        as Java, HTML/CSS, JavaScript, Python, and C.
+                    </p>
+                    <p>
+                        I also enjoy supporting others as a Resident Adviser at UW, as well as teaching
+                        Java programming as a Head Teaching Assistant for the introductory computer science
+                        series.
+                    </p>
+                    <p>
+                        Check out my other pages to see my projects and involvement, and feel free to
+                        <span>contact</span> me!
+                    </p>
+                </section>
+            </section>
 
-      <!-- Experience to be populated using JavaScript -->
-      <section id="exp" class="hidden"></section>
+            <!-- Experience to be populated using JavaScript -->
+            <section id="exp" class="hidden"></section>
 
-      <!-- Resume to be displayed using JavaScript -->
-      <section id="resume" class="hidden">
-        <embed src="files/MayWang_Resume.pdf" width=100% height=100%>
-      </section>
+            <!-- Resume to be displayed using JavaScript -->
+            <section id="resume" class="hidden">
+                <embed src="files/MayWang_Resume.pdf" width=100% height=100%>
+            </section>
 
-      <section id="contact" class="hidden">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" required>
-          <label for="email">Email</label>
-          <input type="text" id="email" required pattern="^[a-zA-Z\d.]+@[a-zA-Z]+[.][a-zA-Z]+">
-          <label for="message">Message</label>
-          <textarea id="message" rows="5" cols="10"></textarea>
-          <button disabled>Submit!</button>
-        </form>
-      </section>
+            <section id="contact" class="hidden">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" required pattern="^[a-zA-Z\d.]+@[a-zA-Z]+[.][a-zA-Z]+">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" cols="10"></textarea>
+                    <button disabled>Submit!</button>
+                </form>
+            </section>
 
-      <button id="top-btn">Back to Top</button>
-    </main>
+            <button id="top-btn">Back to Top</button>
+        </main>
 
-    <footer>Copyright &copy; 2020 May Wang. All rights reserved.</footer>
-  </body>
+        <footer>Copyright &copy; 2020 May Wang. All rights reserved.</footer>
+    </body>
 </html>
